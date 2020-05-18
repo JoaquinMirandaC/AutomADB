@@ -12,22 +12,32 @@ import src.lib.utils as utils
 import os
 
 
-def run(turn, filename="log_wifi.txt"):
+def run(turn, stf_info=None, name="", filename="log_wifi.txt"):
+    stf = False
+    device_params = {}
     # path to save logs
     path = os.path.dirname(os.path.abspath(__file__))
     path = os.path.join(path, "..", "..", "qa", "reports", "")
     # instantiate logger to save a report file
-    logger = Logger(filename, path)
+    logger = Logger(filename, path, name)
     # initiate connection to device(s)
     controller = PhoneControl()
-    # read the serials
-    serials = controller.read_serials()
+    # if a serial was received, run test only for that single serial
+    if stf_info is not None:
+        serials = [stf_info['remote_serial']]
+        device_params = utils.get_device_data(stf_info['device'])
+        stf = True
+    else:
+        # read the serials
+        serials = controller.read_serials()
+
     for i in range(len(serials)):
         logger.write_log(" Device {} = {}".format(i+1, serials))
         # init device with serial
         controller.init_device(serials[i])
-        # get the device parameters from the device version dictionary
-        device_params = utils.get_device_data(serials[i])
+        # get the device parameters from the device version json
+        if not stf:
+            device_params = utils.get_device_data(serials[i])
         logger.write_log("Script Turn Wifi " + turn + " ---------")
         try:
             action(turn, logger, controller, device_params)
@@ -70,11 +80,12 @@ def action(turn, logger, controller, params):
                 logger.write_log("WIFI TURNED OFF")
         else:
             logger.write_log("WIFI ALREADY OFF")
+        logger.end_log()
+
     else:
         raise ValueError(
             'Invalid Input. Should only be ON or OFF')
     controller.click_home()
-    logger.end_log()
 
 
 if __name__ == "__main__":

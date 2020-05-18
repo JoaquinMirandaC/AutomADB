@@ -25,16 +25,16 @@ class PhoneControl:
         self.device = d
 
     def unlock_phone(self):
-        check_call(['adb', '-s', self.serial, 'shell', 'input keyevent', 'KEYCODE_WAKEUP'])
+        self.device.screen.on()
         time.sleep(self.time)
 
 
     def click_home(self):
-        check_call(['adb', '-s', self.serial, 'shell', 'input keyevent', 'KEYCODE_HOME'])
+        self.device.press.home()
         time.sleep(self.time)
 
     def click_back(self):
-        check_call(['adb', '-s', self.serial, 'shell', 'input keyevent', 'KEYCODE_BACK'])
+        self.device.press.back()
         time.sleep(self.time)
 
     def call_adb(self, number):
