@@ -19,21 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f99c0487-3421-4331-8801-6340bea1f378" name="Default Changelist" comment="stf implementation">
-      <change afterPath="$PROJECT_DIR$/src/lib/stf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stf_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="f99c0487-3421-4331-8801-6340bea1f378" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inputs/calculatorapp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/inputs/calculatorapp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qa/reports/log_calculator.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qa/reports/log_dialer.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qa/reports/log_wifi.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/logger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/phone_control.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/phone_control.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/turn_wifi.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/turn_wifi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/suites/wifi.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/suites/wifi.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +198,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588471581817</updated>
       <workItem from="1589064324129" duration="109000" />
-      <workItem from="1589751295469" duration="20015000" />
+      <workItem from="1589751295469" duration="20342000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1589063235563</created>
@@ -255,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589237444555</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="stf implementation">
+      <created>1589778345450</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1589778345451</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,13 +274,18 @@
     <MESSAGE value="THIRD commit" />
     <MESSAGE value="FOURTH commit" />
     <MESSAGE value="ADD TEST CASES" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD TEST CASES" />
+    <MESSAGE value="stf implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="stf implementation" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="7" key="CommitChangelistDialog2" timestamp="1589778264492">
+    <state x="393" y="7" key="CommitChangelistDialog2" timestamp="1589778576541">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589778264492" />
+    <state x="393" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589778576541" />
+    <state x="147" y="65" key="DiffContextDialog" timestamp="1589778339024">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="147" y="65" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1589778339024" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1589777857089">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -317,11 +316,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1589223879327" />
-    <state x="2371" y="183" key="Vcs.Push.Dialog.v2" timestamp="1589237454556">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1589778353786">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="2371" y="183" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589237454556" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589185499135" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589778353786" />
     <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589180583076">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
