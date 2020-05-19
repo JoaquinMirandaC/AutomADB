@@ -8,19 +8,27 @@ import os
 from src.lib.calculator import Calculator
 
 
-def run(a, op, b, filename="log_calculator.txt"):
+def run(a, op, b, stf_info=None, name="", filename="log_calculator.txt"):
+    stf = False
+    device_params = {}
     # path to save logs
     cwd_path = os.path.dirname(os.path.abspath(__file__))
     path = os.path.join(cwd_path, "..", "..", "qa", "reports", "")
-    logger = Logger(filename, path)
+    logger = Logger(filename, path, name)
     controller = PhoneControl(1)
 
-    serials = controller.read_serials()
+    if stf_info is not None:
+        serials = [stf_info['remote_serial']]
+        device_params = utils.get_device_data(stf_info['device'])
+        stf = True
+    else:
+        serials = controller.read_serials()
     for i in range(len(serials)):
         logger.write_log(" Device {} = {}".format(i + 1, serials))
 
         controller.init_device(serials[i])
-        device_params = utils.get_device_data(serials[i])
+        if not stf:
+            device_params = utils.get_device_data(serials[i])
         logger.write_log("Script UI Calculator -----------------")
 
         try:

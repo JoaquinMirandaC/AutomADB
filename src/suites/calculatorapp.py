@@ -2,7 +2,7 @@ import src.scripts.calculator_ui as Calculator
 import os
 
 
-def run_suite():
+def run_suite(stf_info=None):
     # path to inputs
     cwd_path = os.path.dirname(os.path.abspath(__file__))
     path = os.path.join(cwd_path, "..", "..", "inputs", "calculatorapp.txt")
@@ -12,11 +12,15 @@ def run_suite():
         for line in lines:
             # only read line with a + b format
             array = line.split()
-            if len(array) == 3:
+            if len(array) == 3 or 4:
                 # call the script
                 if array[0][0] == "#":
                     continue
-                Calculator.run(array[0], array[1], array[2])
+                if len(array) == 3:
+                    name = ""
+                else:
+                    name = array[3]
+                Calculator.run(array[0], array[1], array[2], stf_info=stf_info, name=name)
             else:
                 continue
 

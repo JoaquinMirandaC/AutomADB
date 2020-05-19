@@ -1,0 +1,346 @@
+TC-005
+test start:  "05-18-20 22:43:51.974000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number---------
+National number 77236019
+-------------RESULTS  ------------------------------------------- 
+SUCCESSFUL CALL
+Test Pass 
+test start:  "05-18-20 22:43:51.974000"
+test end  :  "05-18-20 22:44:12.996000"
+--------------------------------------------------------------- 
+ 
+
+TC-006
+test start:  "05-18-20 22:44:17.854000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number---------
+National number 22794948
+-------------RESULTS  ------------------------------------------- 
+SUCCESSFUL CALL
+Test Pass 
+test start:  "05-18-20 22:44:17.854000"
+test end  :  "05-18-20 22:44:37.020000"
+--------------------------------------------------------------- 
+ 
+
+TC-007
+test start:  "05-18-20 22:44:41.816000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number---------
+National number 77236019
+-------------RESULTS  ------------------------------------------- 
+SUCCESSFUL CALL
+Test Pass 
+test start:  "05-18-20 22:44:41.816000"
+test end  :  "05-18-20 22:45:01.036000"
+--------------------------------------------------------------- 
+ 
+
+TC-008
+test start:  "05-18-20 22:45:05.850000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number---------
+International number +525590458901
+-------------RESULTS  ------------------------------------------- 
+SUCCESSFUL CALL
+Test Pass 
+test start:  "05-18-20 22:45:05.850000"
+test end  :  "05-18-20 22:45:06.018000"
+--------------------------------------------------------------- 
+ 
+
+TC-009
+test start:  "05-18-20 22:45:06.020000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number---------
+-------------RESULTS  ------------------------------------------- 
+Invalid phone number
+Test Pass 
+test start:  "05-18-20 22:45:06.020000"
+test end  :  "05-18-20 22:45:06.188000"
+--------------------------------------------------------------- 
+ 
+
+TC-010
+test start:  "05-18-20 22:45:06.190000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+Test Failed 
+test start:  "05-18-20 22:45:06.190000"
+test end  :  "05-18-20 22:45:06.354000"
+--------------------------------------------------------------- 
+ 
+
+TC-011
+test start:  "05-18-20 22:45:06.355000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+Test Failed 
+test start:  "05-18-20 22:45:06.355000"
+test end  :  "05-18-20 22:45:06.518000"
+--------------------------------------------------------------- 
+ 
+
+TC-012
+test start:  "05-18-20 22:45:06.519000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number---------
+-------------RESULTS  ------------------------------------------- 
+Invalid phone number
+Test Pass 
+test start:  "05-18-20 22:45:06.519000"
+test end  :  "05-18-20 22:45:06.726000"
+--------------------------------------------------------------- 
+ 
+
+TC-013
+test start:  "05-18-20 22:45:06.728000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number---------
+Emergency number 911
+-------------RESULTS  ------------------------------------------- 
+SUCCESSFUL CALL
+Test Pass 
+test start:  "05-18-20 22:45:06.728000"
+test end  :  "05-18-20 22:45:26.253000"
+--------------------------------------------------------------- 
+ 
+
+TC-014
+test start:  "05-18-20 22:45:30.227000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+Test Failed 
+test start:  "05-18-20 22:45:30.227000"
+test end  :  "05-18-20 22:45:30.388000"
+--------------------------------------------------------------- 
+ 
+
+TC-015
+test start:  "05-18-20 22:45:30.389000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+Test Failed 
+test start:  "05-18-20 22:45:30.389000"
+test end  :  "05-18-20 22:45:30.518000"
+--------------------------------------------------------------- 
+ 
+
+TC-016
+test start:  "05-18-20 22:45:30.520000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+Test Failed 
+test start:  "05-18-20 22:45:30.520000"
+test end  :  "05-18-20 22:45:30.686000"
+--------------------------------------------------------------- 
+ 
+
+TC-017
+test start:  "05-18-20 22:45:30.687000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+Test Failed 
+test start:  "05-18-20 22:45:30.687000"
+test end  :  "05-18-20 22:45:30.853000"
+--------------------------------------------------------------- 
+ 
+
+TC-018
+test start:  "05-18-20 22:45:30.855000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+Test Failed 
+test start:  "05-18-20 22:45:30.855000"
+test end  :  "05-18-20 22:45:30.998000"
+--------------------------------------------------------------- 
+ 
+
+TC-019
+test start:  "05-18-20 22:45:30.999000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number UI---------
+National number 77236019
+-------------RESULTS  ------------------------------------------- 
+SUCCESSFUL CALL
+Test Pass 
+test start:  "05-18-20 22:45:30.999000"
+test end  :  "05-18-20 22:45:53.903000"
+--------------------------------------------------------------- 
+ 
+
+TC-020
+test start:  "05-18-20 22:45:56.334000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number UI---------
+National number 22794948
+-------------RESULTS  ------------------------------------------- 
+SUCCESSFUL CALL
+Test Pass 
+test start:  "05-18-20 22:45:56.334000"
+test end  :  "05-18-20 22:46:17.272000"
+--------------------------------------------------------------- 
+ 
+
+TC-021
+test start:  "05-18-20 22:46:19.585000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number UI---------
+National number 77236019
+-------------RESULTS  ------------------------------------------- 
+SUCCESSFUL CALL
+Test Pass 
+test start:  "05-18-20 22:46:19.585000"
+test end  :  "05-18-20 22:46:49.312000"
+--------------------------------------------------------------- 
+ 
+
+TC-022
+test start:  "05-18-20 22:46:51.613000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number UI---------
+International number +525590458901
+-------------RESULTS  ------------------------------------------- 
+SUCCESSFUL CALL
+Test Pass 
+test start:  "05-18-20 22:46:51.613000"
+test end  :  "05-18-20 22:46:51.740000"
+--------------------------------------------------------------- 
+ 
+
+TC-023
+test start:  "05-18-20 22:46:51.742000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number UI---------
+-------------RESULTS  ------------------------------------------- 
+Invalid phone number
+Test Pass 
+test start:  "05-18-20 22:46:51.742000"
+test end  :  "05-18-20 22:46:51.918000"
+--------------------------------------------------------------- 
+ 
+
+TC-024
+test start:  "05-18-20 22:46:51.920000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number UI---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+Test Failed 
+test start:  "05-18-20 22:46:51.920000"
+test end  :  "05-18-20 22:46:52.105000"
+--------------------------------------------------------------- 
+ 
+
+TC-025
+test start:  "05-18-20 22:46:52.108000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number UI---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+Test Failed 
+test start:  "05-18-20 22:46:52.108000"
+test end  :  "05-18-20 22:46:52.287000"
+--------------------------------------------------------------- 
+ 
+
+TC-026
+test start:  "05-18-20 22:46:52.290000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number UI---------
+-------------RESULTS  ------------------------------------------- 
+Invalid phone number
+Test Pass 
+test start:  "05-18-20 22:46:52.290000"
+test end  :  "05-18-20 22:46:52.462000"
+--------------------------------------------------------------- 
+ 
+
+TC-027
+test start:  "05-18-20 22:46:52.464000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number UI---------
+Emergency number 911
+-------------RESULTS  ------------------------------------------- 
+SUCCESSFUL CALL
+Test Pass 
+test start:  "05-18-20 22:46:52.464000"
+test end  :  "05-18-20 22:47:09.746000"
+--------------------------------------------------------------- 
+ 
+
+TC-028
+test start:  "05-18-20 22:47:11.929000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number UI---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+Test Failed 
+test start:  "05-18-20 22:47:11.929000"
+test end  :  "05-18-20 22:47:12.094000"
+--------------------------------------------------------------- 
+ 
+
+TC-029
+test start:  "05-18-20 22:47:12.096000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number UI---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+Test Failed 
+test start:  "05-18-20 22:47:12.096000"
+test end  :  "05-18-20 22:47:12.271000"
+--------------------------------------------------------------- 
+ 
+
+TC-030
+test start:  "05-18-20 22:47:12.274000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number UI---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+Test Failed 
+test start:  "05-18-20 22:47:12.274000"
+test end  :  "05-18-20 22:47:12.460000"
+--------------------------------------------------------------- 
+ 
+
+TC-031
+test start:  "05-18-20 22:47:12.462000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number UI---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+Test Failed 
+test start:  "05-18-20 22:47:12.462000"
+test end  :  "05-18-20 22:47:12.638000"
+--------------------------------------------------------------- 
+ 
+
+TC-032
+test start:  "05-18-20 22:47:12.640000" 
+ Device 1 = [u'localhost:7401']
+Script Dial Number UI---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+Test Failed 
+test start:  "05-18-20 22:47:12.640000"
+test end  :  "05-18-20 22:47:12.817000"
+--------------------------------------------------------------- 
+ 
+

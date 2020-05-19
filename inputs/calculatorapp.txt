@@ -1,45 +1,44 @@
 #Test Case 33
--58 - 99
--27.9 + -105.24
+-27.9 + -105.24 TC33
 #Test Case 34
-492 + 678
+492 + 678 TC34
 #Test Case 35
--3478 - -657
+-3478 - -657 TC35
 # Test Case 36
-149 - 294
+142 - 294 TC36
 #Test Case 37
-23 - -768
+23 - -768 TC37
 #Test Case 38
--58 -99
+-58 - 99 TC38
 #Test Case 39
-25.9 x 85.7
+25.9 x 85.7 TC39
 #test Case 40
--23.5 x -35.5
+-23.5 x -35.5 TC40
 #Test Case 41
-148 x -10
-#Test Cases 41
--8 x 0
-#Test Case 42
-25 / 7
+148 x -10 TC41
+#Test Cases 42
+-8 x 0 TC42
 #Test Case 43
--81 / -9
+25 / 7 TC43
 #Test Case 44
-105 / -23
+-81 / -9 TC44
 #Test Case 45
--549 / 0
+105 / -23 TC45
 #Test Case 46
-dfg + 3
-#Test case 47
-5 + dfgg
-#Test Case 48
-dfhh fghfh dfgdfg
+-549 / 0 TC46
+#Test Case 47
+dfg + 3 TC47
+#Test case 48
+29 + dfgg TC48
 #Test Case 49
--89 + #$%#$
+dfhh fghfh dfgdfg TC49
 #Test Case 50
-#$%&# +$% $%
+-89 + #$%#$ TC50
 #Test Case 51
-33#$" + %4
+11 +      TC51
 #Test Case 52
-123456789012 x 12345678901234566790
+33#$" + %4 TC52
 #Test Case 53
--0 / 1
+9999999999999999 x -9999999999999999 TC53
+#Test Case 54
+-0 / 1 TC54

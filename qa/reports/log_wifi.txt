@@ -1,0 +1,52 @@
+TC-001
+test start:  "05-18-20 22:41:06.752000" 
+ Device 1 = [u'localhost:7401']
+Script Turn Wifi OFF ---------
+Status: Wifi On
+WIFI TURNED OFF
+-------------RESULTS  ------------------------------------------- 
+Test Pass 
+test start:  "05-18-20 22:41:06.752000"
+test end  :  "05-18-20 22:41:52.460000"
+--------------------------------------------------------------- 
+ 
+
+TC-002
+test start:  "05-18-20 22:41:58.724000" 
+ Device 1 = [u'localhost:7401']
+Script Turn Wifi OFF ---------
+WIFI ALREADY OFF
+-------------RESULTS  ------------------------------------------- 
+Test Pass 
+test start:  "05-18-20 22:41:58.724000"
+test end  :  "05-18-20 22:42:16.623000"
+--------------------------------------------------------------- 
+ 
+
+TC-003
+test start:  "05-18-20 22:42:22.852000" 
+ Device 1 = [u'localhost:7401']
+Script Turn Wifi ON ---------
+Status: Wifi Off
+WIFI TURNED ON
+SUCCESSFUL CONNECTION TO: CLAN MIRANDA
+-------------RESULTS  ------------------------------------------- 
+Test Pass 
+test start:  "05-18-20 22:42:22.852000"
+test end  :  "05-18-20 22:42:59.767000"
+--------------------------------------------------------------- 
+ 
+
+TC-004
+test start:  "05-18-20 22:43:09.015000" 
+ Device 1 = [u'localhost:7401']
+Script Turn Wifi ON ---------
+WIFI ALREADY ON
+SUCCESSFUL CONNECTION TO: CLAN MIRANDA
+-------------RESULTS  ------------------------------------------- 
+Test Pass 
+test start:  "05-18-20 22:43:09.015000"
+test end  :  "05-18-20 22:43:42.632000"
+--------------------------------------------------------------- 
+ 
+

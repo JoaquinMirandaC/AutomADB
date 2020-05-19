@@ -8,9 +8,9 @@ def validate_number(number):
     # check for emergency number
     if number == "911":
         return True, number, "Emergency number"
-    # check if is national number (Mexico)
-    parsed = phonenumbers.parse(number, "MX")
-    if parsed.country_code == 52 and phonenumbers.is_possible_number(parsed) and phonenumbers.is_valid_number(parsed):
+    # check if is national number (Bolivia)
+    parsed = phonenumbers.parse(number, "BO")
+    if parsed.country_code == 591 and phonenumbers.is_possible_number(parsed) and phonenumbers.is_valid_number(parsed):
         return True, parsed.national_number, "National number"
     # else check if is international number
     try:

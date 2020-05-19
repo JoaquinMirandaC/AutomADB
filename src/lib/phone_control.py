@@ -38,7 +38,19 @@ class PhoneControl:
         time.sleep(self.time)
 
     def call_adb(self, number):
-        check_output(['adb', 'shell', 'am', 'start', '-a', 'android.intent.action.CALL', '-d', 'tel:' + str(number)])
+        check_output(['adb', '-s', self.serial, 'shell', 'am', 'start', '-a', 'android.intent.action.CALL', '-d', 'tel:' + str(number)])
+        self.device.wait.update()
+
+    def check_call_adb(self):
+        output = check_output(['adb', '-s',  self.serial, 'shell', 'dumpsys', 'telephony.registry', '|', 'grep', 'mCallState'])
+        # 1 is dialing, 2 is active call (if answered).
+        if "1" or "2" in str(output):
+            return True
+        else:
+            return False
+
+    def end_call_adb(self):
+        check_output(['adb', '-s', self.serial, 'shell', 'input', 'keyevent', '6'])
         self.device.wait.update()
 
     def click_button(self, text, classname):

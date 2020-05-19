@@ -5,7 +5,8 @@
   "digit_className": "android.widget.TextView",
   "phone":  { "description": "Phone",
               "className": "android.widget.TextView",
-              "packageName": "com.motorola.launcher3"
+              "packageName": "com.motorola.launcher3",
+              "text": "Phone"
             },
   "settings":  { "text": "Settings",
               "className": "android.widget.TextView"
@@ -28,7 +29,7 @@
                 "className": "android.widget.ImageButton",
                 "packageName": "com.google.android.dialer"
               },
-  "hang":  { "description": "End Call",
+  "hang":  { "description": "End call",
                 "className": "android.widget.ImageButton",
                 "packageName": "com.google.android.dialer"
               },

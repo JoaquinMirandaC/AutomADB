@@ -11,20 +11,30 @@ import src.lib.utils as utils
 import os
 
 
-def run(number=None, filename="log_dialer.txt"):
+def run(number=None, stf_info=None, name="", filename="log_dialer.txt"):
+    stf = False
+    device_params = {}
     # path to save logs
     path = os.path.dirname(os.path.abspath(__file__))
     path = os.path.join(path, "..", "..", "qa", "reports", "")
-    logger = Logger(filename, path)
+    logger = Logger(filename, path, name)
 
     controller = PhoneControl()
 
-    serials = controller.read_serials()
+    if stf_info is not None:
+        serials = [stf_info['remote_serial']]
+        device_params = utils.get_device_data(stf_info['device'])
+        stf = True
+    else:
+        serials = controller.read_serials()
     for i in range(len(serials)):
         logger.write_log(" Device {} = {}".format(i + 1, serials))
 
         controller.init_device(serials[i])
-        device_params = utils.get_device_data(serials[i])
+
+        if not stf:
+            device_params = utils.get_device_data(serials[i])
+
         logger.write_log("Script Dial Number---------")
         if number is None:
             n = raw_input("Enter the number to dial : ")
@@ -44,25 +54,19 @@ def run(number=None, filename="log_dialer.txt"):
 def action(logger, controller, number, params):
     controller.unlock_phone()
     controller.click_home()
-    controller.click_detailed_button(params["phone"]["className"], params["phone"]["packageName"], params["phone"]["description"])
+    controller.click_button(params["phone"]["text"], params["phone"]["className"])
     if controller.detailed_button_exists(params['key-pad']['className'], params['key-pad']['packageName'], params['key-pad']['description']):
         controller.click_detailed_button(params['key-pad']['className'], params['key-pad']['packageName'], params['key-pad']['description'])
     controller.longclick_detailed_button(params['backspace']['className'], params['backspace']['packageName'], params['backspace']['description'])
-    # controller.set_text_textfield(params['textField_className'], params['textField_packageName'], number)
-    # controller.click_detailed_button(params['dial']['className'], params['dial']['packageName'], params['dial']['description'])
     controller.call_adb(number)
-    if controller.detailed_button_exists(params['hang']['className'], params['hang']['packageName'], params['hang']['description']):
-        time.sleep(3)
-        logger.write_log("SUCCESSFUL CALL")
-        controller.click_detailed_button(params['hang']['className'], params['hang']['packageName'], params['hang']['description'])
-        logger.end_log()
+    time.sleep(3)
+    if controller.check_call_adb():
+        controller.end_call_adb()
+        logger.end_log("SUCCESSFUL CALL")
     else:
         logger.error_log("CALL FAILED")
     controller.click_home()
 
 
-
-# ---------------------------------------------------------------------------
-
 if __name__ == "__main__":
-    run()
+    run(number="001 956 778 5720")
