@@ -1,4 +1,4 @@
 {
-  "auth-token":"4dd7aa43f5b7405bb781c6af14965fb23e6fbf101b44437487a8cd6f21e34b1d",
-  "stf-url": "http://localhost:7100"
+  "auth-token":"your_auth_token",
+  "stf-url": "your_stf_url"
 }
