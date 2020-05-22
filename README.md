@@ -128,10 +128,11 @@ En este caso, se deben definir los inputs de la calculadora en el archivo *input
 |---	|---	|
 |  [Business Case](docs/BusinessCase.docx) 	|   docs/BusinessCase	|
 |   [Test Plan](qa/Test-Plan-and-Strategy.docx)	|   qa/Test-Plan-and-Strategy	|
-|   [Test Strategy]()	|   qa/Test-Plan-and-Strategy	|
-|   [Test Cases](qa/Test-Plan-and-Strategy.docx)	|   qa/TestCases-Matrix-v2	|
+|   [Test Strategy](qa/Test-Plan-and-Strategy.docx)	|   qa/Test-Plan-and-Strategy	|
+|   [Test Cases](qa/TestCases-Matrix-v2.xlsx)	|   qa/TestCases-Matrix-v2	|
 |   [Traceability Matrix](qa/TestCases-Matrix-v2.xlsx)	|   qa/TestCases-Matrix-v2 |
 |   [Execution reports](qa/reports)	|   qa/reports	|
 |   [Release Notes](docs/releaseNotesv2.docx)	|   docs/releaseNotesv2	|
 |   [Bug Reports](docs/releaseNotesv2.docx)	|   docs/releaseNotesv2	|
 |   [Core documentation](docs/core.docx)	|   docs/core	|
+|   [Setup and Execution](README.md)	|   README	|
