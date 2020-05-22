@@ -1,4 +1,8 @@
-# Requisitos del Setup
+#AUTOMADB
+
+
+
+## Requisitos del Setup
 
 Estos son los requisitos para poder ejecutar el proyecto:
 
@@ -6,6 +10,7 @@ Estos son los requisitos para poder ejecutar el proyecto:
   * Pip package installer
   * Android Debug Bridge (ADB)
   * Android SDK Tools
+  * Java Development Kit 8
   * Para poder ejecutar la framework con STF, es necesario tener instalado OpenSTF. (https://github.com/openstf/stf).
 
 ### Preparacion
@@ -15,7 +20,28 @@ del proyecto, y insertar este comando:
 
 `pip install -r requirements.txt`
 
-Para ejecutar la framework en version STF, se debe modificar el archivo **stf_config.json**. Es necesario obtener la token de acceso para la API, y especificar la direccion IP donde STF se encuentra corriendo.
+### Preparacion OpenSTF
+
+Para correr su instancia en STF, segun la documentacion de OpenSTF, si se tienen todos los prerequisitos correspondientes de su parte, ejecutar:
+
+`stf local`
+
+O si se desea correr sobre la red local:
+
+`stf local --public-ip <ip_address>`
+
+Despues, dirigirse a la consola de STF en http://<ip_address>:7100/ e ingresar con las credenciales de su instalacion STF.
+
+Para obtener una token, dirigirse a Settings y Keys, para generar un access Token para la API.
+
+![Alt text](docs/STF-1.png?raw=true "STFToken")
+
+En la misma pagina, debe seguir las instrucciones para añadir las ADB keys de su maquina a STF, para poder asi controlar a los
+dispositivos remotamente.
+
+![Alt text](docs/STF-2.png?raw=true "STFKeys")
+
+Finalmente, integrar STF a la framework, se debe modificar el archivo ***stf_config.json***. Ahi se especifica el Access Token y la URL donde esta corriendo nuestro STF.
 
 
 ### Ultimos detalles
@@ -96,4 +122,18 @@ Una vez en el directorio de las suites, se definen los scripts a correr y se def
 
 En este caso, se deben definir los inputs de la calculadora en el archivo *inputs/calculatorapp.txt*
 
-Este metodo solo funciona con los dispositivos locales.
+Este metodo solo funciona corriendo la framework con la bandera de '-local'
+
+### Documentacion
+
+|   File	|   Location	|
+|---	|---	|
+|  [Business Case](docs/BusinessCase.docx) 	|   docs/BusinessCase	|
+|   [Test Plan](qa/Test-Plan-and-Strategy.docx)	|   qa/Test-Plan-and-Strategy	|
+|   [Test Strategy]()	|   qa/Test-Plan-and-Strategy	|
+|   [Test Cases](qa/Test-Plan-and-Strategy.docx)	|   qa/TestCases-Matrix-v2	|
+|   [Traceability Matrix](qa/TestCases-Matrix-v2.xlsx)	|   qa/TestCases-Matrix-v2 |
+|   [Execution reports](qa/reports)	|   qa/reports	|
+|   [Release Notes](docs/releaseNotesv2.docx)	|   docs/releaseNotesv2	|
+|   [Bug Reports](docs/releaseNotesv2.docx)	|   docs/releaseNotesv2	|
+|   [Core documentation](docs/core.docx)	|   docs/core	|
